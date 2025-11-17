@@ -1,0 +1,664 @@
+/* ===============================
+   RESET
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ===============================
+   GLOBAL
+================================= */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: #ff1a1a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   URGENCY BAR
+================================= */
+
+.urgency-bar {
+    background: linear-gradient(90deg, #8b0000, #ff1a1a);
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    font-weight: 700;
+    box-shadow: 0 0 20px #ff1a1a;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero {
+    background: radial-gradient(circle at center, #400000 0%, #000 70%);
+    padding: 70px 20px 60px;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 800px;
+    position: relative;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 0 0 25px #ff1a1a;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    margin-top: 5px;
+    color: #ccc;
+    font-size: 1.05rem;
+}
+
+.hero-headline {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 18px 20px;
+    border-radius: 14px;
+    border: 1px solid #ff1a1a;
+    background: radial-gradient(circle at center, #400000 0%, #000 100%);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+    line-height: 1.4;
+    position: absolute;
+    bottom: -70px;
+}
+
+/* ===============================
+   CONTENT SECTION
+================================= */
+
+.content-section {
+    background: #000;
+    padding: 70px 20px 60px;
+}
+
+.content-section .container {
+    max-width: 850px;
+}
+
+.content-text p {
+    color: #ddd;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.emphasis {
+    font-weight: 700;
+    color: #fff;
+}
+
+.time-emphasis {
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #ff1a1a, #8b0000);
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* box com benefícios iniciais */
+
+.highlight-box {
+    background: rgba(255, 0, 0, 0.08);
+    border: 1px solid #ff1a1a;
+    border-radius: 12px;
+    padding: 25px 22px;
+    box-shadow: 0 0 22px rgba(255, 0, 0, 0.25);
+    margin: 25px 0 30px;
+}
+
+.highlight-box h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.highlight-box ul {
+    list-style: none;
+}
+
+.highlight-box li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+/* grande revelação */
+
+.big-reveal {
+    background: linear-gradient(90deg, #ff1a1a, #8b0000);
+    padding: 22px 18px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 0 0 30px #ff1a1a;
+    margin: 25px 0;
+}
+
+/* ===============================
+   SECTION TITLES
+================================= */
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #ccc;
+    font-size: 1.02rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* ===============================
+   BENEFITS
+================================= */
+
+.benefits-section {
+    padding: 70px 20px 60px;
+    background: #050505;
+}
+
+.benefits-section .section-title {
+    margin-bottom: 35px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.benefit-card {
+    background: #000;
+    padding: 28px 24px;
+    border-radius: 16px;
+    border: 1px solid #8b0000;
+    box-shadow: 0 0 22px rgba(255, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.benefit-card:hover {
+    border-color: #ff1a1a;
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.benefit-card p {
+    color: #ccc;
+    font-size: 0.98rem;
+}
+
+/* ===============================
+   PRODUCT CARDS
+================================= */
+
+.products-section {
+    background: radial-gradient(circle at center, #300000, #000);
+    padding: 80px 20px 80px;
+}
+
+.products-section .section-title {
+    margin-bottom: 10px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.product-card {
+    position: relative;
+    background: #050505;
+    border: 1px solid #8b0000;
+    border-radius: 20px;
+    padding: 24px 22px 26px;
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.3);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff1a1a;
+    box-shadow: 0 0 60px rgba(255, 0, 0, 0.6);
+}
+
+.product-card.featured {
+    border-width: 2px;
+    box-shadow: 0 0 60px rgba(255, 0, 0, 0.65);
+    transform: translateY(-6px);
+}
+
+.product-badge {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    background: #ff1a1a;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.product-badge.popular {
+    background: linear-gradient(90deg, #ff1a1a, #8b0000);
+}
+
+.savings-badge {
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px dashed #ff1a1a;
+    padding: 5px 9px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.product-image-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.524));
+}
+
+.product-title {
+    font-size: 1.35rem;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.product-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.product-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    gap: 4px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.new-price {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ff1a1a;
+}
+
+.price-per-bottle {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.product-features {
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+.product-features li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+/* ===============================
+   CTA BUTTONS
+================================= */
+
+.cta-button {
+    background: linear-gradient(90deg, #ff1a1a, #8b0000);
+    padding: 15px 18px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 100%;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 36px #ff1a1a;
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.cta-button.large {
+    max-width: 420px;
+    margin: 25px auto 0;
+    font-size: 1.1rem;
+}
+
+/* ===============================
+   BONUS SECTION
+================================= */
+
+.bonus-section {
+    padding: 75px 20px 65px;
+    background: #050505;
+}
+
+.bonus-section .section-title {
+    margin-bottom: 30px;
+}
+
+.bonus-content {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.bonus-image-container {
+    max-width: 380px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+}
+
+.bonus-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.bonus-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.bonus-value {
+    color: #ff1a1a;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.bonus-text p {
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+.bonus-text ul {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.bonus-text li {
+    margin-bottom: 6px;
+}
+
+/* ===============================
+   GUARANTEE SECTION
+================================= */
+
+.guarantee-section {
+    padding: 70px 20px 60px;
+    background: radial-gradient(circle at center, #400000, #000);
+}
+
+.guarantee-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 16px;
+    padding: 28px 24px;
+    border: 1px solid #ff1a1a;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+
+.guarantee-image {
+    max-width: 130px;
+    margin-bottom: 15px;
+}
+
+.guarantee-box h2 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.guarantee-box p {
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+.guarantee-emphasis {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+/* ===============================
+   FINAL CTA SECTION
+================================= */
+
+.final-cta-section {
+    background: radial-gradient(circle at center, #400000, #000);
+    padding: 80px 20px 70px;
+    text-align: center;
+}
+
+.final-cta-section .container {
+    max-width: 850px;
+}
+
+.final-question {
+    font-size: 2rem;
+    text-shadow: 0 0 15px #ff1a1a;
+    margin-bottom: 25px;
+}
+
+.questions-list {
+    margin: 0 auto 20px;
+    max-width: 650px;
+}
+
+.question {
+    background: rgba(255, 0, 0, 0.12);
+    border: 1px solid #8b0000;
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin: 12px 0;
+    font-size: 1.02rem;
+}
+
+.final-message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.urgency-text {
+    margin-top: 18px;
+    color: #ff7a7a;
+    font-size: 0.95rem;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+.footer {
+    background: #000;
+    color: #777;
+    padding: 35px 20px 30px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer .disclaimer {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===============================
+   RESPONSIVO
+================================= */
+
+@media (max-width: 900px) {
+    .hero-title {
+        font-size: 2.1rem;
+    }
+
+    .hero-headline {
+        font-size: 1.35rem;
+        bottom: -130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bonus-content {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-section {
+        padding: 10px 15px 50px;
+    }
+    .products-section {
+        padding: 20px 15px 50px;
+    }
+    .bonus-section{
+        padding: 20px 15px 50px;
+    }
+    .guarantee-section{
+        padding: 20px 15px 50px;
+    }
+    .final-cta-section{
+        padding: 20px 15px 50px;
+    }
+    
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero .container {
+        max-width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-headline {
+        font-size: 1.2rem;
+        padding: 14px;
+    }
+
+    .cta-button.large {
+        width: 100%;
+    }
+
+    .urgency-bar {
+        font-size: 0.85rem;
+        padding-inline: 8px;
+    }
+}
