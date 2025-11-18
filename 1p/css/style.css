@@ -296,6 +296,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    max-width: 400px;
 }
 
 .product-card:hover {
