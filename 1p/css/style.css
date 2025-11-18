@@ -509,6 +509,10 @@ a:hover {
     text-align: center;
 }
 
+.guarantee-list {
+   list-style: none;
+}
+
 .guarantee-image {
     max-width: 130px;
     margin-bottom: 15px;
